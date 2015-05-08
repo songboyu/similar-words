@@ -1,0 +1,8 @@
+RewriteEngine on 
+RewriteCond $1 !^(index\.php|rs|robots\.txt) 
+RewriteRule ^(.*)$ /similar-words/index.php/$1 [L]
+
+#AuthType Basic
+#AuthName "WORKING CENTER"
+#AuthUserFile /etc/httpd/conf/puma_passwd
+#require valid-user
