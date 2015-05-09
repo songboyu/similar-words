@@ -58,7 +58,7 @@
 	function task_manage_table_init(){
 		var table = $('#task_manage_table');
 		table.dataTable( {
-			"pageLength": 15,
+			"pageLength": 50,
 			"bProcessing": true,
 			"bServerSide": true,
 			"sPaginationType": "full_numbers",
@@ -152,7 +152,7 @@
 		if(confirm("确认删除？")!=true)
 			return false;
 		taskid = dataid;
-		$.get(base_url+"task_manage/deleteTask/"+taskid,function(data){
+		$.get(base_url+"word_manage/deleteTask/"+taskid,function(data){
 			reload_datatable('#task_manage_table');
 		});
 	}

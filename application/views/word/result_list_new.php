@@ -12,9 +12,9 @@
 				<table class="table table-striped table-bordered table-hover" id="word_list_table">
 					<thead>
 						<tr>
-							<!-- <th>编号</th> -->
+							<th>编号</th>
 							<th>相关词</th>
-							<!-- <th>相关类别</th> -->
+							<th>相关类别</th>
 						</tr>
 					</thead>
 					<tbody id="word_table_body">
@@ -80,7 +80,7 @@
 					"className": "td_text_align_center",
 				},
 				{
-					"targets": [0], // 目标列位置，下标从0开始
+					"targets": [1], // 目标列位置，下标从0开始
 					"data": "rs",
 					"className": "td_text_align_center",
 				},

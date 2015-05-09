@@ -88,7 +88,7 @@
             <!-- BEGIN LOGO -->
             <div class="page-logo" style="padding: 10px 5px 5px 10px; width: 240; background-color:#2d5f8b;">
                 <!-- <a href="<?php echo base_url();?>"> -->
-                    <p><font style = "color:#fff;font-size:1.5em;font-weight:bold;text-align:center;">特定信息监测预警系统</font></p>
+                    <p><font style = "color:#fff;font-size:1.5em;font-weight:bold;text-align:center;">中文词汇扩展系统</font></p>
                     <!-- <img src="<?php echo base_url('rs/images/yujing2.png');?>" alt="logo" /> -->
                     <!-- <img src="<?php echo base_url('rs/images/logo-white-preview.png');?>" alt="logo" height="46" width="141"/> -->
                 <!-- </a> -->

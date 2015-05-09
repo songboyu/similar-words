@@ -136,7 +136,15 @@ class word_Model extends CI_Model
     {
         $this->db->insert('task', $data);
         $data['taskId'] = $this->db->insert_id();
-        $result = $this->do_post('http://192.168.1.199:7788/task/createTask', $data);
+        $result = $this->do_post('http://125.211.198.186:7788/task/createTask', $data);
         return $result;
+    }
+    function deleteTask($id)
+    {
+        $this->db->where('task_id',$id); 
+        $this->db->delete('task');
+
+        $this->db->where('task_id',$id); 
+        $this->db->delete('result');
     }
 }

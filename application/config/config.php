@@ -15,7 +15,7 @@
 |
 */
 
-$config['base_url']	= 'http://localhost/similar-words/';
+$config['base_url']	= 'https://125.211.198.187/word-expand/';
 
 
 /*
