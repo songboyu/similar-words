@@ -93,7 +93,7 @@ class word_Model extends CI_Model
         if($sort_col != ''){
             $this->db->order_by($sort_col, $sort_type);
         }else{
-            $this->db->order_by('rs', 'desc');
+            $this->db->order_by('score', 'desc');
         }
         if($search_str != ''){
             $columns_array = array(
