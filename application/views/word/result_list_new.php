@@ -14,6 +14,7 @@
 						<tr>
 							<th>编号</th>
 							<th>相关词</th>
+							<th>相关程度</th>
 							<th>相关类别</th>
 						</tr>
 					</thead>
@@ -65,12 +66,13 @@
 				"sProcessing": "<img src='<?php echo base_url('rs/global/img/loading-spinner-blue.gif');?>' />",
 			},
 			"aaSorting":[//设置默认排序列
-			[ 0, "rs_id" ]
+			[ 2, "score" ]
 			],
 			'columns': //columns属性，配置具体列属性，详见http://sgyyz.blog.51cto.com/5069360/1408251
 			[
 			{ 'data': 'rs_id'},
 			{ 'data': 'rs'},
+			{ 'data': 'score'},
 			{ 'data': 'tag'},
 			],
 			"columnDefs": [
@@ -86,6 +88,11 @@
 				},
 				{
 					"targets": [2], // 目标列位置，下标从0开始
+					"data": "score",
+					"className": "td_text_align_center",
+				},
+				{
+					"targets": [3], // 目标列位置，下标从0开始
 					"data": "tag",
 					"className": "td_text_align_center",
 					"render": function(data, type, full){
