@@ -65,9 +65,9 @@
 				"sZeroRecords": "没有检索到数据",
 				"sProcessing": "<img src='<?php echo base_url('rs/global/img/loading-spinner-blue.gif');?>' />",
 			},
-			// "aaSorting":[//设置默认排序列
-			// [ 2, "score" ]
-			// ],
+			"aaSorting":[//设置默认排序列
+			[ 2, "desc" ]
+			],
 			'columns': //columns属性，配置具体列属性，详见http://sgyyz.blog.51cto.com/5069360/1408251
 			[
 			{ 'data': 'rs_id'},
