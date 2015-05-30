@@ -15,7 +15,7 @@
 							<th>编号</th>
 							<th>相关词</th>
 							<th>相关程度</th>
-							<th>相关类别</th>
+						<!--	<th>相关类别</th> -->
 						</tr>
 					</thead>
 					<tbody id="word_table_body">
@@ -73,7 +73,7 @@
 			{ 'data': 'rs_id'},
 			{ 'data': 'rs'},
 			{ 'data': 'score'},
-			{ 'data': 'tag'},
+			//{ 'data': 'tag'},
 			],
 			"columnDefs": [
 				{
@@ -91,14 +91,14 @@
 					"data": "score",
 					"className": "td_text_align_center",
 				},
-				{
+			/*	{
 					"targets": [3], // 目标列位置，下标从0开始
 					"data": "tag",
 					"className": "td_text_align_center",
 					"render": function(data, type, full){
 						return '<code>' + data + '</code>';
 					}
-				}
+				}*/
 				],
 			//回调函数，修改每个tr中Content的td的属性, 增加dataid属性;修改每个tr的属性, 增加dataid属性
 			"fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull) {
